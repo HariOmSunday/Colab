@@ -1,0 +1,12 @@
+importmatplotlib.pyplot as plt
+marks=[]
+i=0
+subjects=["Tamil","English","Maths"]
+while i<3:
+      marks.append(int(input("Enter Marks=")))
+      i+=1
+   for j in range(len(marks)):
+      print("{}.{}Mark={}".format(j+1, subjects [j],marks[j]))
+plt.pie(marks,labels=subjects,autopct="%.2f")
+Plt.axes().set_aspect("equal")
+plt.show()
